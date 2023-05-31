@@ -32,10 +32,19 @@ main {
 
 }
 
-dt a {
+a {
     color: black;
     text-decoration: none;
     position: relative;
+   
+}
+ a:hover {
+    background-color: rgb(194, 194, 194);
+    color: #e40038;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10px;
+    padding: 2px;
    
 }
 
