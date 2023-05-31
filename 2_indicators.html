@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные финансовые показатели</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="2_indicators.js"></script>
+
+    <style>
+        .text {
+            font-size:larger;
+        }
+        button {
+            font-size:large;
+            background-color:  #e40038;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>  
+        <img class="logo" src="https://api.rosbank.ru/uploads/header_logo_d/4/641c0821a0821.svg">
+  
+        <dl>
+            <dt><a href="index.html">О компании</a></dt>
+        </dl>
+        <dl>
+            <dt class="current"><a href="2_indicators.html">Основные финансовые показатели</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="3_contacts.html">Контактные данные</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="4_video.html">Видео</a></dt>
+        </dl>           
+    </header>
+
+    <main style="margin-top: 30px; text-align: center;">
+        <div class="text">
+            <b>Капитализация:</b> 156 381.31 млн RUB <br>
+            <b>Общее число акций:</b> 1 551.40 млн шт
+        </div>
+        
+        <div class="text">
+            <button onclick="stockPrice()">Курс закрытия акций</button>
+            <table border="1" id="stock-price" style="margin: auto;"></table>
+            <div id="average-price"></div>
+            <div id="min"></div>
+            <div id="max"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Дарья Мальцева, ФБИ-13, 2 курс, 2023
+    </footer>
+</body>
+</html>
