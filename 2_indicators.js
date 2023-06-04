@@ -31,11 +31,22 @@
             }
 
             let sum=0;
+            let k=0;
             for (let i = 0; i < price.length; i++) {
                 sum = sum + price[i];
+                k+=1;
             }
             let average = sum / price.length;
-            document.getElementById('average-price').innerHTML = '<b>Среднее значение: </b>' + average;
+            
+            let sum2=0;
+            for(let q=0; q < price.length; q++) {
+                sum2 = (Math.abs(price[q] - average))**2;
+            }
+            let deviation = Math.sqrt( sum2 / k);
+            
+            document.getElementById('deviation').innerHTML = '<b>Среднеквадратическое отклонение: </b>' + deviation.toFixed(2);
+
+
 
             let max = 0;
             let min = price[0];
